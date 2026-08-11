@@ -50,8 +50,6 @@ export default function SiteHeader() {
 
           <div
             className={`site-nav-group ${locationsOpen ? "site-nav-group-open" : ""}`}
-            onMouseEnter={() => setLocationsOpen(true)}
-            onMouseLeave={() => setLocationsOpen(false)}
           >
             <button
               type="button"
