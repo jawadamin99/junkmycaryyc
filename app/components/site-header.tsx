@@ -4,14 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { cityPages } from "../lib/city-pages";
-import { mainNav, siteConfig } from "../lib/site";
+import { mainNav, servicesNav, siteConfig } from "../lib/site";
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const [locationsOpen, setLocationsOpen] = useState(false);
 
   const closeMenu = () => {
     setIsOpen(false);
+    setServicesOpen(false);
     setLocationsOpen(false);
   };
 
@@ -49,13 +51,40 @@ export default function SiteHeader() {
           ))}
 
           <div
+            className={`site-nav-group ${servicesOpen ? "site-nav-group-open" : ""}`}
+          >
+            <button
+              type="button"
+              className="site-nav-trigger"
+              aria-expanded={servicesOpen}
+              onClick={() => {
+                setServicesOpen((open) => !open);
+                setLocationsOpen(false);
+              }}
+            >
+              Services
+            </button>
+
+            <div className="site-nav-dropdown">
+              {servicesNav.map((item) => (
+                <Link key={item.href} href={item.href} onClick={closeMenu}>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div
             className={`site-nav-group ${locationsOpen ? "site-nav-group-open" : ""}`}
           >
             <button
               type="button"
               className="site-nav-trigger"
               aria-expanded={locationsOpen}
-              onClick={() => setLocationsOpen((open) => !open)}
+              onClick={() => {
+                setLocationsOpen((open) => !open);
+                setServicesOpen(false);
+              }}
             >
               Locations
             </button>

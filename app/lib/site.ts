@@ -19,3 +19,10 @@ export const mainNav = [
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;
+
+export const servicesNav = [
+  { label: "Junk Car Removal Calgary", href: "/services/junk-car-removal-calgary" },
+  { label: "Scrap Car Removal Calgary", href: "/services/scrap-car-removal-calgary" },
+  { label: "Cash For Scrap Cars Calgary", href: "/services/cash-for-scrap-cars-calgary" },
+  { label: "Cash For Junk Cars Calgary", href: "/services/cash-for-junk-cars-calgary" },
+] as const;

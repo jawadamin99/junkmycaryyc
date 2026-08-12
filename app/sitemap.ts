@@ -5,9 +5,13 @@ import { cityPages } from "./lib/city-pages";
 const pages = [
   "/",
   "/about",
+  "/bill-of-sale-alberta",
+  "/services/cash-for-junk-cars-calgary",
   "/contact",
+  "/services/cash-for-scrap-cars-calgary",
+  "/services/junk-car-removal-calgary",
   "/privacy-policy",
-  "/scrap-car-removal",
+  "/services/scrap-car-removal-calgary",
   "/terms-of-use",
 ];
 

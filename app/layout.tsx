@@ -27,11 +27,22 @@ const businessSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": `${siteConfig.url}/#organization`,
+      name: siteConfig.name,
+      url: siteConfig.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/brand/junkmycaryyc-new-logo.png`,
+      },
+    },
+    {
       "@type": ["LocalBusiness", "AutoDealer"],
       "@id": `${siteConfig.url}/#business`,
       name: siteConfig.name,
       url: siteConfig.url,
       image: siteConfig.socialImage,
+      logo: `${siteConfig.url}/brand/junkmycaryyc-new-logo.png`,
       telephone: siteConfig.phoneHref.replace("tel:", ""),
       address: {
         "@type": "PostalAddress",
@@ -42,13 +53,20 @@ const businessSchema = {
       },
       areaServed: ["Calgary", "Airdrie", "Chestermere", "Okotoks", "Cochrane"],
       openingHours: "Mo-Su 00:00-23:59",
+      parentOrganization: {
+        "@id": `${siteConfig.url}/#organization`,
+      },
     },
     {
       "@type": "WebSite",
       "@id": `${siteConfig.url}/#website`,
       name: siteConfig.name,
+      alternateName: "Cash For Cars Calgary",
       url: siteConfig.url,
       inLanguage: "en-CA",
+      publisher: {
+        "@id": `${siteConfig.url}/#organization`,
+      },
     },
   ],
 };

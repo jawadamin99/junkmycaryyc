@@ -16,14 +16,12 @@ export async function POST(req: Request) {
     const formData = await req.formData();
     const name = String(formData.get("name") || "");
     const phone = String(formData.get("phone") || "");
-    const vehicleYear = String(formData.get("vehicleYear") || "");
-    const make = String(formData.get("make") || "");
-    const model = String(formData.get("model") || "");
+    const email = String(formData.get("email") || "");
+    const vehicleDetails = String(formData.get("vehicleYear") || "");
     const condition = String(formData.get("condition") || "");
+    const city = String(formData.get("city") || "");
     const message = String(formData.get("message") || "");
     const pageUrl = String(formData.get("pageUrl") || "");
-
-    const vehicleSummary = [vehicleYear, make, model].filter(Boolean).join(" ");
 
     const forwardedFor = req.headers.get("x-forwarded-for") || "";
     const realIp = req.headers.get("x-real-ip") || "";
@@ -57,8 +55,10 @@ export async function POST(req: Request) {
             <table style="width:100%; border-collapse:collapse; font-size:14px;">
               <tr><td style="padding:8px 0; color:#6b7280; width:160px;">Name</td><td style="padding:8px 0; color:#111827; font-weight:600;">${escapeHtml(name) || "-"}</td></tr>
               <tr><td style="padding:8px 0; color:#6b7280;">Phone</td><td style="padding:8px 0; color:#111827; font-weight:600;">${escapeHtml(phone) || "-"}</td></tr>
-              <tr><td style="padding:8px 0; color:#6b7280;">Vehicle</td><td style="padding:8px 0; color:#111827; font-weight:600;">${escapeHtml(vehicleSummary) || "-"}</td></tr>
+              <tr><td style="padding:8px 0; color:#6b7280;">Email</td><td style="padding:8px 0; color:#111827; font-weight:600;">${escapeHtml(email) || "-"}</td></tr>
+              <tr><td style="padding:8px 0; color:#6b7280;">Vehicle</td><td style="padding:8px 0; color:#111827; font-weight:600;">${escapeHtml(vehicleDetails) || "-"}</td></tr>
               <tr><td style="padding:8px 0; color:#6b7280;">Condition</td><td style="padding:8px 0; color:#111827; font-weight:600;">${escapeHtml(condition) || "-"}</td></tr>
+              <tr><td style="padding:8px 0; color:#6b7280;">City / Area</td><td style="padding:8px 0; color:#111827; font-weight:600;">${escapeHtml(city) || "-"}</td></tr>
             </table>
             <div style="margin-top:16px; padding:12px; background:#f9fafb; border-radius:8px; border:1px solid #e5e7eb;">
               <div style="font-size:12px; color:#6b7280; margin-bottom:6px;">Additional Information</div>
@@ -82,15 +82,17 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: `"Junk My Car YYC" <${from}>`,
-      replyTo: from,
+      replyTo: email || from,
       to,
       cc,
       subject: "Junk My Car YYC Quote Request",
       text: [
         `Name: ${name}`,
         `Phone: ${phone}`,
-        `Vehicle: ${vehicleSummary}`,
+        `Email: ${email || "-"}`,
+        `Vehicle: ${vehicleDetails}`,
         `Condition: ${condition}`,
+        `City / Area: ${city}`,
         `Message: ${message}`,
         "",
         "Submission Metadata:",
