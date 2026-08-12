@@ -74,6 +74,15 @@ const businessSchema = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   applicationName: siteConfig.name,
+  icons: {
+    icon: [
+      { url: "/favicon.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: ["/favicon.png"],
+  },
   title: {
     default: `${siteConfig.name} | Cash For Cars Calgary`,
     template: `%s | ${siteConfig.name}`,

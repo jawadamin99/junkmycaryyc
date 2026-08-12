@@ -10,8 +10,7 @@ export const siteConfig = {
   addressRegion: "AB",
   addressCountry: "CA",
   primaryColor: "#0757B8",
-  socialImage:
-    "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80",
+  socialImage: "https://junkmycaryyc.ca/brand/junkmycaryyc-new-logo.png",
 };
 
 export const mainNav = [
