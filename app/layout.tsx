@@ -23,6 +23,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const gaId = "G-VCPMYFQDKS";
+
 const businessSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -119,28 +121,34 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
-
   return (
     <html lang="en">
       <head>
         <JsonLd data={businessSchema} />
-        {gaId ? (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga4-inline" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${gaId}');
-              `}
-            </Script>
-          </>
-        ) : null}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-inline" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', '${gaId}');
+
+            document.addEventListener('click', function (event) {
+              var link = event.target instanceof Element ? event.target.closest('a[href^="tel:"]') : null;
+              if (!link || typeof window.gtag !== 'function') return;
+
+              window.gtag('event', 'phone_call', {
+                phone_number: link.getAttribute('href') || '',
+                link_text: (link.textContent || '').trim(),
+                page_location: window.location.href,
+              });
+            });
+          `}
+        </Script>
       </head>
       <body className={`${manrope.variable} ${rajdhani.variable} ${geistMono.variable}`}>
         {children}

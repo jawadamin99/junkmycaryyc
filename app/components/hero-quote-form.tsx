@@ -30,6 +30,15 @@ export default function HeroQuoteForm() {
         throw new Error("Failed to submit");
       }
 
+      if (typeof window !== "undefined" && typeof window.gtag === "function") {
+        window.gtag("event", "form_submit", {
+          form_name: "vehicle_quote_form",
+          page_location: window.location.href,
+          vehicle_condition: String(formData.get("condition") || ""),
+          city_area: String(formData.get("city") || ""),
+        });
+      }
+
       setSubmitMessage("Thanks. Your quote request has been sent.");
       form.reset();
     } catch {
