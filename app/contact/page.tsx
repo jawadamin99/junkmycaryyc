@@ -24,7 +24,7 @@ export default function ContactPage() {
               <h1>Free Calgary quote. Fast response. Clear pickup plan.</h1>
               <p className="hero-support">
                 Phone or text is fastest, and most quotes take two minutes. No obligation
-                either way.
+                either way, whether you started on <a className="content-link" href="/">cash for cars Calgary</a> or want to read <a className="content-link" href="/about">about Junk My Car YYC</a> first.
               </p>
 
               <div className="contact-highlight-grid">

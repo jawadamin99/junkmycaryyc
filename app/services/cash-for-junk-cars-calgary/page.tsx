@@ -233,7 +233,7 @@ export default function CashForJunkCarsCalgaryPage() {
                 Before you sell a junk car, it is worth ten minutes understanding the transaction.
                 This page covers whether you should sell at all, exactly how the process works,
                 what you need, how you are paid, and how to recognise an operator who is going to
-                waste your afternoon.
+                waste your afternoon, whether you started with <a className="content-link" href="/">cash for cars Calgary</a> or need straight <a className="content-link" href="/services/junk-car-removal-calgary">junk car removal Calgary</a>.
               </p>
               <ul className="hero-bullets">
                 {heroBullets.map((bullet) => (

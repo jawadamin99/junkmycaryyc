@@ -76,7 +76,7 @@ export default function HighRiverPage() {
           <div className="hero-copy">
             <p className="eyebrow">Junk Car Removal High River</p>
             <h1>Junk Car Removal High River — Including Water-Damaged Vehicles</h1>
-            <p className="hero-support">High River knows flood vehicles better than most towns. We buy them, along with every other kind of junk or written-off vehicle.</p>
+            <p className="hero-support">High River knows flood vehicles better than most towns. We buy them, along with every other kind of junk or written-off vehicle, through the same <a className="content-link" href="/">cash for cars Calgary</a> process and nearby <a className="content-link" href="/cash-for-cars-okotoks">Okotoks cash for cars</a> coverage.</p>
             <ul className="hero-bullets">{heroBullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>
             <a href={siteConfig.phoneHref} className="primary-button">Call {siteConfig.phoneDisplay}</a>
           </div>

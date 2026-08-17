@@ -97,6 +97,10 @@ export default function SiteHeader() {
               ))}
             </div>
           </div>
+
+          <Link href="/contact" onClick={closeMenu}>
+            Contact
+          </Link>
         </nav>
 
         <div className="site-header-cta">

@@ -125,7 +125,7 @@ export default function RedDeerPage() {
             <div className="hero-copy">
               <p className="eyebrow">Cash For Cars Red Deer</p>
               <h1>Cash for Cars Red Deer — Central Alberta&apos;s Straightforward Sell</h1>
-              <p className="hero-support">Halfway between Calgary and Edmonton, Red Deer burns through kilometres. When your vehicle is done, we pay cash and haul it away.</p>
+              <p className="hero-support">Halfway between Calgary and Edmonton, Red Deer burns through kilometres. When your vehicle is done, we pay cash and haul it away through our <a className="content-link" href="/">cash for cars Calgary</a> service and nearby <a className="content-link" href="/cash-for-cars-olds">Olds cash for cars</a> coverage.</p>
               <ul className="hero-bullets">{heroBullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>
               <a href={siteConfig.phoneHref} className="primary-button">Call {siteConfig.phoneDisplay}</a>
             </div>
@@ -259,6 +259,9 @@ export default function RedDeerPage() {
         <section className="section faq-section">
           <div className="site-shell">
             <SectionIntro eyebrow="FAQ" title="Straight answers for Red Deer sellers." description="Timing, fleet questions, outlying communities, and payment handled up front." />
+            <p className="section-body-copy">
+              Vehicle value in Red Deer depends on condition, access, paperwork, and how quickly it can be picked up.
+            </p>
             <div className="faq-grid">{faqItems.map((item) => <article key={item.question} className="faq-card"><h3>{item.question}</h3><p>{item.answer}</p></article>)}</div>
           </div>
         </section>

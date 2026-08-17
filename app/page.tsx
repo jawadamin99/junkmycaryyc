@@ -122,6 +122,14 @@ const serviceAreas = {
 };
 
 const regionalAreas = ["Airdrie", "Cochrane", "Chestermere", "Okotoks", "Strathmore", "High River", "Balzac", "Rocky View County", "Foothills County"];
+const regionalAreaLinks: Record<string, string> = {
+  Airdrie: "/cash-for-cars-airdrie",
+  Cochrane: "/cash-for-cars-cochrane",
+  Chestermere: "/junk-my-car-chestermere",
+  Okotoks: "/cash-for-cars-okotoks",
+  HighRiver: "/cash-for-cars-high-river",
+  Strathmore: "/junk-my-car-strathmore",
+};
 
 const faqItems = [
   {
@@ -310,8 +318,8 @@ export default function HomePage() {
                   </div>
                   <p>
                     {item === "Junk & scrap cars" && "Rusted, rotted, rolled, or stripped down."}
-                    {item === "Non-running vehicles" && "Blown engines, seized transmissions, electrical failures, and dead batteries."}
-                    {item === "Hail-damaged write-offs" && "Calgary hail losses taken exactly as-is."}
+                    {item === "Non-running vehicles" && <>Blown engines, seized transmissions, electrical failures, and <a className="content-link" href="/services/junk-car-removal-calgary">non-running vehicles</a> with dead batteries.</>}
+                    {item === "Hail-damaged write-offs" && <>Calgary <a className="content-link" href="/services/cash-for-junk-cars-calgary">hail-damaged write-offs we buy as-is</a>.</>}
                     {item === "Accident & collision-damaged cars" && "Front-end, rear-end, and rollover damage accepted."}
                     {item === "High-mileage trade-in rejects" && "Older vehicles dealers will not touch on trade."}
                     {item === "Trucks, SUVs, vans, and fleet vehicles" && "From compact sedans to 3/4-ton pickups and idle commercial units."}
@@ -475,9 +483,15 @@ export default function HomePage() {
             </div>
             <div className="region-chip-wrap">
               {regionalAreas.map((area) => (
-                <span key={area} className="region-chip">
-                  {area}
-                </span>
+                regionalAreaLinks[area.replace(/\s+/g, "")] ? (
+                  <a key={area} className="region-chip" href={regionalAreaLinks[area.replace(/\s+/g, "")]}>
+                    {area}
+                  </a>
+                ) : (
+                  <span key={area} className="region-chip">
+                    {area}
+                  </span>
+                )
               ))}
             </div>
           </div>

@@ -71,7 +71,7 @@ export default function OkotoksPage() {
           <div className="hero-copy">
             <p className="eyebrow">Junk Car Removal Okotoks</p>
             <h1>Junk Car Removal Okotoks — Cash Paid, Towing Included</h1>
-            <p className="hero-support">Okotoks households accumulate extra vehicles fast. When one finally becomes a chore nobody wants to start, we remove it and pay cash for it.</p>
+            <p className="hero-support">Okotoks households accumulate extra vehicles fast. When one finally becomes a chore nobody wants to start, we remove it and pay cash for it, whether you started on <a className="content-link" href="/">cash for cars Calgary</a> or need <a className="content-link" href="/services/junk-car-removal-calgary">junk car removal south of Calgary</a>.</p>
             <ul className="hero-bullets">{heroBullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>
             <a href={siteConfig.phoneHref} className="primary-button">Call {siteConfig.phoneDisplay}</a>
           </div>

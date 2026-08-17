@@ -22,8 +22,7 @@ export default function TermsOfUsePage() {
             <p className="eyebrow">Terms of Use</p>
             <h1>Website terms, quote terms, sale terms, pickup terms, and liability limits.</h1>
             <p className="section-body-copy">
-              This page uses your supplied terms content and keeps the unresolved legal
-              placeholders visible for later review.
+              These terms cover use of the site, the quote process, vehicle sales, pickup terms, and liability limits.
             </p>
           </div>
         </section>
@@ -53,7 +52,7 @@ export default function TermsOfUsePage() {
               <p><strong>3.1 Your representations.</strong> By selling to us you represent that you are at least 18, are the registered owner or hold documented legal authority, have the legal right to sell, that liens are cleared, the vehicle is not stolen, the description is accurate, residual contents are disclosed, and your ID and information are true and valid.</p>
               <p><strong>3.2 Indemnity.</strong> You agree to indemnify us against losses arising from a breach of clause 3.1.</p>
               <p><strong>3.3 Identification is mandatory.</strong> Alberta legislation requires us to collect and report prescribed information. We cannot complete a purchase without this.</p>
-              <p><strong>3.4 Payment.</strong> Payment is made at pickup by traceable method (electronic transfer). [Confirm the application of this requirement with your lawyer and keep all site copy consistent.]</p>
+              <p><strong>3.4 Payment.</strong> Payment is made at pickup by traceable method (electronic transfer).</p>
               <p><strong>3.5 As is.</strong> Vehicles are purchased as is, where is, with all faults, for dismantling, salvage and recycling.</p>
             </article>
             <article className="legal-card">

@@ -632,6 +632,40 @@ li {
   color: #fff;
 }
 
+.content-link {
+  color: var(--brand-blue);
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.18em;
+  text-decoration-color: currentColor;
+  transition: color 0.18s ease, text-decoration-color 0.18s ease, opacity 0.18s ease;
+}
+
+.content-link:hover,
+.content-link:focus-visible {
+  color: var(--brand-blue-strong);
+  text-decoration-color: var(--brand-blue-strong);
+  outline: none;
+}
+
+.section-dark .content-link,
+.cta-band .content-link,
+.site-footer .content-link {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.86);
+}
+
+.section-dark .content-link:hover,
+.section-dark .content-link:focus-visible,
+.cta-band .content-link:hover,
+.cta-band .content-link:focus-visible,
+.site-footer .content-link:hover,
+.site-footer .content-link:focus-visible {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration-color: #fff;
+}
+
 .intro-split {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);

@@ -93,7 +93,7 @@ export default function CanmorePage() {
             <div className="hero-copy">
               <p className="eyebrow">Scrap Car Removal Canmore</p>
               <h1>Scrap Car Removal Canmore — We Come Up the Valley and Take It Away</h1>
-              <p className="hero-support">There is nowhere in the Bow Valley to scrap a car locally, so when a vehicle dies in Canmore it eventually has to come down to Calgary. That is exactly what we do.</p>
+              <p className="hero-support">There is nowhere in the Bow Valley to scrap a car locally, so when a vehicle dies in Canmore it eventually has to come down to Calgary. That is exactly what we do through our <a className="content-link" href="/">cash for cars Calgary</a> service and nearby <a className="content-link" href="/junk-my-car-banff">Banff junk car removal</a> coverage.</p>
               <ul className="hero-bullets">{heroBullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>
               <a href={siteConfig.phoneHref} className="primary-button">Call {siteConfig.phoneDisplay}</a>
             </div>

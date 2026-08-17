@@ -239,7 +239,7 @@ export default function ChestermerePage() {
               <h1>Cash for Cars Chestermere — Paid on the Spot, Towing Included</h1>
               <p className="hero-support">
                 Chestermere households tend to collect more vehicles than they need. We
-                buy them running or not, and haul them away for free.
+                buy them running or not, and haul them away for free through our <a className="content-link" href="/">cash for cars Calgary</a> process and direct <a className="content-link" href="/services/junk-car-removal-calgary">junk car removal Calgary</a> coverage.
               </p>
               <ul className="hero-bullets">
                 {heroBullets.map((bullet) => (

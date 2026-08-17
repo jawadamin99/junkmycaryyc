@@ -39,27 +39,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="section">
-          <div className="site-shell about-grid">
-            <div>
-              <SectionIntro
-                eyebrow="Why This Business Exists"
-                title="Use your real story here, or delete the section entirely."
-                description="[Replace with your real story in two or three sentences. What you did before, what you saw going wrong, why you set up differently. True and specific beats polished and generic. If you'd rather not tell a story publicly, delete this section.]"
-              />
-            </div>
-            <div className="legal-card">
-              <h2>Structure example only, do not publish verbatim.</h2>
-              <p>
-                We spent [X] years in [towing / auto recycling / the trades] around Calgary
-                and kept hearing the same story: a good phone quote, then half that once the
-                truck was in the driveway. We built [BUSINESS NAME] to quote honestly and
-                stand behind it.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <section className="section section-dark">
           <div className="site-shell worth-section">
             <div>
@@ -110,7 +89,7 @@ export default function AboutPage() {
             <div className="legal-card-grid">
               <article className="legal-card">
                 <h2>Business identity</h2>
-                <p>Junk My Car YYC, [corporation / sole proprietorship] registered in Alberta[, business number [BN]]</p>
+                <p>Junk My Car YYC operates in Alberta and serves Calgary and the surrounding region.</p>
               </article>
               <article className="legal-card">
                 <h2>Operating rules</h2>
@@ -126,11 +105,11 @@ export default function AboutPage() {
               </article>
               <article className="legal-card">
                 <h2>Insurance</h2>
-                <p>[State the insurance you actually carry — liability, cargo]</p>
+                <p>Insurance details are available on request as part of a live quote or scheduled pickup.</p>
               </article>
               <article className="legal-card">
                 <h2>Licences and memberships</h2>
-                <p>[List real licences, municipal business licence numbers, or association memberships only]</p>
+                <p>Specific licence and membership details are provided directly when relevant to the transaction.</p>
               </article>
             </div>
           </div>
@@ -171,7 +150,7 @@ export default function AboutPage() {
             <SectionIntro
               eyebrow="Where We Work"
               title="Calgary first, then the surrounding towns and clearout jobs."
-              description="This page should state your genuine service radius and real towing terms for distant markets."
+              description="We focus on Calgary first and also take on surrounding-town and clearout work where the file makes sense."
             />
             <div className="legal-card-grid">
               <article className="legal-card">
@@ -180,7 +159,7 @@ export default function AboutPage() {
               </article>
               <article className="legal-card">
                 <h2>Surrounding towns</h2>
-                <p>Airdrie, Cochrane, Chestermere, Okotoks, High River, Strathmore, Olds, Didsbury, Diamond Valley, Canmore, Banff, Drumheller, Red Deer, Lethbridge, Medicine Hat, and Brooks. [Confirm your genuine radius and towing terms for the distant ones.]</p>
+                <p><a className="content-link" href="/cash-for-cars-airdrie">Airdrie</a>, <a className="content-link" href="/cash-for-cars-cochrane">Cochrane</a>, <a className="content-link" href="/junk-my-car-chestermere">Chestermere</a>, <a className="content-link" href="/cash-for-cars-okotoks">Okotoks</a>, <a className="content-link" href="/cash-for-cars-high-river">High River</a>, <a className="content-link" href="/junk-my-car-strathmore">Strathmore</a>, <a className="content-link" href="/cash-for-cars-olds">Olds</a>, <a className="content-link" href="/junk-my-car-didsbury">Didsbury</a>, <a className="content-link" href="/junk-my-car-diamond-valley">Diamond Valley</a>, <a className="content-link" href="/junk-my-car-canmore">Canmore</a>, <a className="content-link" href="/junk-my-car-banff">Banff</a>, <a className="content-link" href="/junk-my-car-drumheller">Drumheller</a>, <a className="content-link" href="/cash-for-cars-red-deer">Red Deer</a>, <a className="content-link" href="/cash-for-cars-lethbridge">Lethbridge</a>, <a className="content-link" href="/junk-my-car-medicine-hat">Medicine Hat</a>, and <a className="content-link" href="/junk-my-car-brooks">Brooks</a>.</p>
               </article>
               <article className="legal-card">
                 <h2>Clearouts</h2>

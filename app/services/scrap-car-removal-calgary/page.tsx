@@ -231,7 +231,7 @@ export default function ScrapCarRemovalCalgaryPage() {
                 Anyone with a trailer can take your car away. Far fewer can tell you what legally
                 has to happen to it next. We scrap vehicles across Calgary through certified
                 Alberta facilities, hand you a signed bill of sale on the spot, and can document
-                the disposal if you need it.
+                the disposal if you need it, whether you came from <a className="content-link" href="/">cash for cars Calgary</a> or need the pricing side of <a className="content-link" href="/services/cash-for-scrap-cars-calgary">cash for scrap cars in Calgary</a>.
               </p>
               <ul className="hero-bullets">
                 {heroBullets.map((bullet) => (

@@ -234,7 +234,7 @@ export default function LethbridgePage() {
               <h1>Cash for Cars Lethbridge — Any Condition, Real Money, Quick Pickup</h1>
               <p className="hero-support">
                 Wind, hail, coulees, and long prairie distances wear Lethbridge vehicles
-                out fast. When one reaches the end, we pay cash for it running or not.
+                out fast. When one reaches the end, we pay cash for it running or not through our <a className="content-link" href="/">cash for cars Calgary</a> process and nearby <a className="content-link" href="/junk-my-car-medicine-hat">Medicine Hat junk car buyers</a> coverage.
               </p>
               <ul className="hero-bullets">
                 {heroBullets.map((bullet) => (

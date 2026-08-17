@@ -245,7 +245,7 @@ export default function JunkCarRemovalCalgaryPage() {
                 Most people do not call because they want money. They call because they want the
                 thing gone. It is blocking a garage, filling a stall, sinking into a lawn, or
                 drawing looks from neighbours. We remove junk vehicles anywhere in Calgary and pay
-                you at pickup instead of charging you.
+                you at pickup instead of charging you, whether you started on <a className="content-link" href="/">cash for cars Calgary</a> or want to <a className="content-link" href="/services/cash-for-junk-cars-calgary">get cash for your junk car</a>.
               </p>
               <ul className="hero-bullets">
                 {heroBullets.map((bullet) => (

@@ -240,7 +240,7 @@ export default function CochranePage() {
               <p className="hero-support">
                 Cochrane has grown fast, and growth leaves old vehicles behind. Running
                 or dead, keys or no keys, we buy cars across Cochrane and tow them away
-                at no charge.
+                at no charge through our <a className="content-link" href="/">cash for cars Calgary</a> network and nearby <a className="content-link" href="/junk-my-car-canmore">Canmore junk car pickup</a> coverage.
               </p>
               <ul className="hero-bullets">
                 {heroBullets.map((bullet) => (

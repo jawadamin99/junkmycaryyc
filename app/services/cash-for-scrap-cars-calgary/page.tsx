@@ -207,7 +207,7 @@ export default function CashForScrapCarsCalgaryPage() {
               <h1>Cash for Scrap Cars Calgary — How Your Offer Is Actually Calculated</h1>
               <p className="hero-support">
                 Every scrap car buyer in Calgary quotes a number and almost none explain it.
-                Here is the whole calculation, openly, before you call anyone.
+                Here is the whole calculation, openly, before you call anyone, whether you started on <a className="content-link" href="/">cash for cars Calgary</a> or want the simpler service view on <a className="content-link" href="/services/scrap-car-removal-calgary">scrap car removal Calgary</a>.
               </p>
               <ul className="hero-bullets">
                 {heroBullets.map((bullet) => (

@@ -242,7 +242,7 @@ export default function MedicineHatPage() {
               <h1>Cash for Cars Medicine Hat — Sun-Faded, Seized, or Scrap, We Buy It</h1>
               <p className="hero-support">
                 Medicine Hat gets roughly 2,544 hours of sunshine a year, and that is
-                brutal on vehicles. When yours reaches the end, we pay cash for it.
+                brutal on vehicles. When yours reaches the end, we pay cash for it through our <a className="content-link" href="/">cash for cars Calgary</a> process and nearby <a className="content-link" href="/junk-my-car-brooks">Brooks cash for cars</a> coverage.
               </p>
               <ul className="hero-bullets">
                 {heroBullets.map((bullet) => (

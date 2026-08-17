@@ -220,7 +220,7 @@ export default function AirdriePage() {
               <p className="hero-support">
                 That car parked beside your Airdrie home is not going to sell itself, but
                 one phone call can turn it into cash today. Running or dead, we buy it and
-                tow it away for free.
+                tow it away for free through our <a className="content-link" href="/">cash for cars Calgary</a> service and local <a className="content-link" href="/services/junk-car-removal-calgary">junk car removal near Airdrie</a> coverage.
               </p>
               <ul className="hero-bullets">
                 {heroBullets.map((bullet) => (
