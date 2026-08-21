@@ -24,23 +24,31 @@ export default function SiteFooter() {
             </div>
 
             <div className="site-footer-links">
-              <p className="site-footer-heading">Company</p>
-              {mainNav.map((item) => (
-                <Link key={item.href} href={item.href}>
-                  {item.label}
-                </Link>
-              ))}
+              <p className="site-footer-heading">Quick Links</p>
+
+              <Link href="/">Home</Link>
+              <Link href="/about">About Us</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/blog">Blog</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/terms-of-use">Terms of Use</Link>
             </div>
 
             <div className="site-footer-links">
               <p className="site-footer-heading">Services</p>
-              {servicesNav.map((item) => (
-                <Link key={item.href} href={item.href}>
-                  {item.label}
-                </Link>
-              ))}
+
+              <Link href="/services/junk-car-removal-calgary">
+                Junk Car Removal
+              </Link>
+              <Link href="/services/scrap-car-removal-calgary">
+                Scrap Car Removal
+              </Link>
+              <Link href="/services/cash-for-scrap-cars-calgary">
+                Cash for Scrap Cars
+              </Link>
+              <Link href="/services/cash-for-junk-cars-calgary">
+                Cash for Junk Cars Cars
+              </Link>
             </div>
 
             <div className="site-footer-links">

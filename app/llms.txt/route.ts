@@ -1,4 +1,9 @@
+import { getAllBlogSlugs } from "../lib/blog";
 import { siteConfig } from "../lib/site";
+
+const blogUrls = ["/blog", ...getAllBlogSlugs().map((slug) => `/blog/${slug}`)].map(
+  (path) => `${siteConfig.url}${path}`,
+);
 
 const lines = [
   `# ${siteConfig.name}`,
@@ -16,6 +21,9 @@ const lines = [
   `${siteConfig.url}/services/scrap-car-removal-calgary`,
   `${siteConfig.url}/services/cash-for-scrap-cars-calgary`,
   `${siteConfig.url}/services/cash-for-junk-cars-calgary`,
+  "",
+  "## Blog",
+  ...blogUrls,
   "",
   "## Policies",
   `${siteConfig.url}/privacy-policy`,

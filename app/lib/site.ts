@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: process.env.NEXT_PUBLIC_BUSINESS_NAME || "Junk My Car YYC",
   domain: "junkmycaryyc.ca",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://junkmycaryyc.ca",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.junkmycaryyc.ca",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY || "(403) 837-1550",
   phoneHref: process.env.NEXT_PUBLIC_PHONE_HREF || "tel:+14038371550",
   email: "info@junkmycaryyc.ca",
@@ -10,7 +10,7 @@ export const siteConfig = {
   addressRegion: "AB",
   addressCountry: "CA",
   primaryColor: "#0757B8",
-  socialImage: "https://junkmycaryyc.ca/brand/junkmycaryyc-new-logo.png",
+  socialImage: "https://www.junkmycaryyc.ca/brand/junkmycaryyc-new-logo.png",
 };
 
 export const mainNav = [

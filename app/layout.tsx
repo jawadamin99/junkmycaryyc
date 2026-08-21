@@ -63,7 +63,7 @@ const businessSchema = {
       "@type": "WebSite",
       "@id": `${siteConfig.url}/#website`,
       name: siteConfig.name,
-      alternateName: "Cash For Cars Calgary",
+      alternateName: siteConfig.name,
       url: siteConfig.url,
       inLanguage: "en-CA",
       publisher: {
@@ -86,13 +86,13 @@ export const metadata: Metadata = {
     shortcut: ["/favicon.png"],
   },
   title: {
-    default: `${siteConfig.name} | Cash For Cars Calgary`,
+    default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
   description:
     "Cash for cars Calgary with quick vehicle quotes, fast pickup scheduling, and a clean, modern contact experience.",
   openGraph: {
-    title: `${siteConfig.name} | Cash For Cars Calgary`,
+    title: siteConfig.name,
     description:
       "Cash for cars Calgary with quick vehicle quotes, fast pickup scheduling, and a clean, modern contact experience.",
     url: "/",
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Cash For Cars Calgary`,
+    title: siteConfig.name,
     description:
       "Cash for cars Calgary with quick vehicle quotes, fast pickup scheduling, and a clean, modern contact experience.",
     images: [siteConfig.socialImage],
