@@ -224,10 +224,7 @@ export default function HomePage() {
               <div className="promo-banner-copy">
                 <p className="eyebrow">Calgary Pickup Promise</p>
                 <h2>Fast quotes, same-day towing, and a clear handoff from call to pickup.</h2>
-                <p className="section-body-copy">
-                  This visual block gives the homepage a stronger image section without
-                  interfering with the hero form or duplicating your main headline.
-                </p>
+
                 <ul className="promo-banner-points">
                   <li>Running or not, we buy vehicles across Calgary and nearby towns</li>
                   <li>Free towing with straightforward pickup scheduling</li>
@@ -565,7 +562,7 @@ export default function HomePage() {
             <SectionIntro
               eyebrow="Frequently Asked Questions"
               title="Straight answers before you call."
-              description="This keeps the page conversion-focused while handling the common objections and logistics upfront."
+              description=""
             />
             <div className="faq-grid">
               {faqItems.map((item) => (
