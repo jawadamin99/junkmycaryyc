@@ -200,9 +200,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Scrap Car Removal Calgary | Licensed & Documented",
+  title: "Scrap Car Removal Calgary | Same-Day Flatbed Pickup",
   description:
-    "Scrap car removal in Calgary by a licensed recycler. Proper depollution, certified facilities, bill of sale provided. Call (403) 837-1550 for a free quote.",
+    "Scrap car removal Calgary done right — end-of-life vehicles hauled to licensed recyclers, fluids handled safely, cash at pickup. (403) 837-1550.",
   path: "/services/scrap-car-removal-calgary",
 });
 

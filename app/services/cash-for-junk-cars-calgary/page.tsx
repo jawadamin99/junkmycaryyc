@@ -202,9 +202,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cash For Junk Cars Calgary | How It Works, No Hidden Fees",
+  title: "Cash for Junk Cars Calgary | Hail & Wreck Write-Offs",
   description:
-    "How selling a junk car in Calgary actually works — your options compared, what you need, how you're paid, and how to spot a bad buyer. Call (403) 837-1550.",
+    "Cash for junk cars Calgary — hail write-offs, collision damage, blown engines and high-mileage trade-in rejects bought as-is. (403) 837-1550.",
   path: "/services/cash-for-junk-cars-calgary",
 });
 

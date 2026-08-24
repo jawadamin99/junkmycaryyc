@@ -178,9 +178,9 @@ const paymentItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cash For Scrap Cars Calgary | How Your Offer Is Priced",
+  title: "Cash for Scrap Cars Calgary | Top Dollar by Weight",
   description:
-    "What a scrap car is worth in Calgary and exactly how the number is calculated — weight, steel prices, converter and parts. Call (403) 837-1550 for a live quote.",
+    "Cash for scrap cars Calgary priced on live scrap steel rates, vehicle weight and reusable parts. Paid on the spot with a bill of sale. (403) 837-1550.",
   path: "/services/cash-for-scrap-cars-calgary",
 });
 

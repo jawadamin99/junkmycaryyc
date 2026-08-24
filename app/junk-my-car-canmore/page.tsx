@@ -76,8 +76,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Scrap Car Removal Canmore | Cash For Cars, We Haul It",
-  description: "Scrap car removal in Canmore and the Bow Valley — cash paid at pickup, running or not. We haul out of the valley. Call (403) 837-1550 for a free quote today.",
+  title: "Cash for cars canmore | Rust & Rot Bought As-Is",
+  description: "Cash for cars canmore — undercarriage rust, frame rot and cold-start failures are exactly what we buy. Tight-access pickup. (403) 837-1550.",
   path: "/junk-my-car-canmore",
 });
 

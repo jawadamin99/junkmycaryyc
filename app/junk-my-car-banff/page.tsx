@@ -54,8 +54,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Scrap Car Removal Banff | Cash For Cars, Hauled Out",
-  description: "Scrap car removal in Banff — cash paid at pickup and your vehicle hauled out of the national park. Running or not. Call (403) 837-1550 for a free quote today.",
+  title: "Cash for cars Banff | Any Condition, No Keys Needed",
+  description:
+    "Cash for cars Banff — no keys, dead battery or won't start is fine. Winch loading, ID and ownership verified on site. Call (403) 837-1550.",
   path: "/junk-my-car-banff",
 });
 

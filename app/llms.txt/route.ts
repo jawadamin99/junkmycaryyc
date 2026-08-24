@@ -1,14 +1,16 @@
 import { getAllBlogSlugs } from "../lib/blog";
+import { cityPages } from "../lib/city-pages";
 import { siteConfig } from "../lib/site";
 
 const blogUrls = ["/blog", ...getAllBlogSlugs().map((slug) => `/blog/${slug}`)].map(
   (path) => `${siteConfig.url}${path}`,
 );
+const cityUrls = cityPages.map((page) => `${siteConfig.url}/${page.slug}`);
 
 const lines = [
   `# ${siteConfig.name}`,
   "",
-  `> ${siteConfig.name} buys junk and scrap vehicles in Calgary and surrounding Alberta communities, with free towing and payment at pickup.`,
+  `> ${siteConfig.name} is a licensed Calgary vehicle buyer with 20 years in market, 1000+ 5-star reviews, free towing, same-day pickup, and payment on the spot with a bill of sale.`,
   "",
   "## Main Pages",
   `${siteConfig.url}/`,
@@ -21,6 +23,9 @@ const lines = [
   `${siteConfig.url}/services/scrap-car-removal-calgary`,
   `${siteConfig.url}/services/cash-for-scrap-cars-calgary`,
   `${siteConfig.url}/services/cash-for-junk-cars-calgary`,
+  "",
+  "## Cities",
+  ...cityUrls,
   "",
   "## Blog",
   ...blogUrls,

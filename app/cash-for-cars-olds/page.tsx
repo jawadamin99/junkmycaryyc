@@ -45,8 +45,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Junk Car Removal Olds AB | Cash For Cars, Free Towing",
-  description: "Junk car removal in Olds and Mountain View County — cash at pickup for any vehicle, running or not. Free towing. Call (403) 837-1550 for a free quote today.",
+  title: "Cash for Cars Olds | Bill of Sale on Every Deal",
+  description: "Cash for cars Olds with ownership verified and a signed bill of sale both parties keep. Plates stay with you. Call (403) 837-1550.",
   path: "/cash-for-cars-olds",
 });
 

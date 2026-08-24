@@ -214,9 +214,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Junk Car Removal Calgary | Off Your Property Today",
+  title: "Junk Car Removal Calgary | Free Flatbed Pickup 24/7",
   description:
-    "Junk car removal in Calgary — any condition, any access. Parkades, alleys, garages, no wheels. Free towing, paid at pickup. Call (403) 837-1550 for a quote.",
+    "Junk car removal Calgary for non-runners, no-key and long-sitting vehicles. Flatbed and winch pickup across NW, NE, SW, SE. Call (403) 837-1550.",
   path: "/services/junk-car-removal-calgary",
 });
 

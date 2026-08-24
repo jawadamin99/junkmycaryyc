@@ -210,9 +210,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cash For Cars Chestermere | Top Dollar & Free Towing",
+  title: "Cash for cars chestermere | 20 Min From Our Yard",
   description:
-    "Get cash for cars in Chestermere — any condition, running or not. Free same-day towing to every community, paid on the spot. Call (403) 837-1550 for your free quote.",
+    "Cash for cars chestermere — you're 20 minutes off Glenmore Trail, so pickup is often same day. Non-runners welcome. Call (403) 837-1550.",
   path: "/junk-my-car-chestermere",
 });
 

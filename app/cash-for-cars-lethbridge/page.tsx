@@ -205,9 +205,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cash For Cars Lethbridge | Any Condition, Fast Pickup",
+  title: "Cash for Cars Lethbridge | Fleet & Farm Units Too",
   description:
-    "Cash for cars in Lethbridge — running or not, any condition. Pickup across North, West and South Lethbridge, paid on the spot. Call (403) 837-1550 for a free quote.",
+    "Cash for cars Lethbridge — sedans, 3/4-ton pickups, idle farm and fleet units. Priced on weight and parts value. Call (403) 837-1550.",
   path: "/cash-for-cars-lethbridge",
 });
 

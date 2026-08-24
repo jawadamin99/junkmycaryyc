@@ -127,15 +127,34 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="contact-faq-card">
-              <p className="eyebrow">Quick Answers</p>
-              <h2>Common contact questions.</h2>
-              <div className="contact-faq-list">
-                <p><strong>How fast can you pick up?</strong> Often same-day, usually within 24 hours in Calgary.</p>
-                <p><strong>Is the quote free?</strong> Yes, with no obligation. Quotes, towing, and paperwork cost you nothing.</p>
-                <p><strong>Do I need to be there?</strong> Normally yes. The registered owner signs and provides ID.</p>
-                <p><strong>Can you buy a car that isn&apos;t in my name?</strong> No, and neither can anyone else legally.</p>
-                <p><strong>I&apos;m not ready to sell, just asking.</strong> Call anyway. If selling privately is better for your vehicle, we will tell you.</p>
+            <div className="contact-map-stack">
+              <div className="contact-faq-card">
+                <p className="eyebrow">Quick Answers</p>
+                <h2>Common contact questions.</h2>
+                <div className="contact-faq-list">
+                  <p><strong>How fast can you pick up?</strong> Often same-day, usually within 24 hours in Calgary.</p>
+                  <p><strong>Is the quote free?</strong> Yes, with no obligation. Quotes, towing, and paperwork cost you nothing.</p>
+                  <p><strong>Do I need to be there?</strong> Normally yes. The registered owner signs and provides ID.</p>
+                  <p><strong>Can you buy a car that isn&apos;t in my name?</strong> No, and neither can anyone else legally.</p>
+                  <p><strong>I&apos;m not ready to sell, just asking.</strong> Call anyway. If selling privately is better for your vehicle, we will tell you.</p>
+                </div>
+              </div>
+
+              <div className="contact-map-card">
+                <p className="eyebrow">Map</p>
+                <h2>Junk My Car YYC on Google Maps.</h2>
+                <div className="map-embed-frame">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d289495.2300691713!2d-113.8431828682807!3d51.02552233986828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c19b4c571d60bb5%3A0x1c84f45d58829fc5!2sJunk%20My%20Car%20YYC!5e0!3m2!1sen!2s!4v1787609605181!5m2!1sen!2s"
+                    width="600"
+                    height="450"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    title="Junk My Car YYC Google Map"
+                  />
+                </div>
               </div>
             </div>
           </div>

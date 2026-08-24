@@ -47,8 +47,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Junk Car Removal Brooks AB | Cash For Cars, Any State",
-  description: "Junk car removal in Brooks and Newell County — cash paid for any vehicle, running or not. Farm and work trucks welcome. Call (403) 837-1550 for a free quote today.",
+  title: "Cash for cars brooks | Work Trucks & Idle Fleets",
+  description: "Cash for cars brooks — retired work trucks, idle company units and end-of-life sedans hauled away and paid for as they sit. (403) 837-1550.",
   path: "/junk-my-car-brooks",
 });
 

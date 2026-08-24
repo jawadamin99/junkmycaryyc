@@ -210,9 +210,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cash For Cars Cochrane | Free Towing, Same-Day Pickup",
+  title: "Cash for Cars Cochrane | Acreage & Town Pickups",
   description:
-    "Sell your car for cash in Cochrane — running or not. Free towing to every community, no hidden fees, paid at pickup. Call (403) 837-1550 for a fast quote today.",
+    "Cash for cars Cochrane, from Sunset Ridge driveways to acreages off Highway 22. Winch and flatbed for stuck units. Call (403) 837-1550.",
   path: "/cash-for-cars-cochrane",
 });
 

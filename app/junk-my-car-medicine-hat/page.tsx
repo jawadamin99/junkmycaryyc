@@ -213,9 +213,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cash For Cars Medicine Hat | Fast Quotes, Any Condition",
+  title: "Cash for cars Medicine Hat | Honest Scrap Math",
   description:
-    "Cash for cars in Medicine Hat — any make, running or not. Pickup across the city, Redcliff and Dunmore, paid on the spot. Call (403) 837-1550 for a free quote today.",
+    "Cash for cars Medicine Hat  — your offer reflects live steel rates, curb weight and reusable parts, not a number built to negotiate. (403) 837-1550.",
   path: "/junk-my-car-medicine-hat",
 });
 

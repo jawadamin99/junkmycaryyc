@@ -159,9 +159,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cash For Cars Calgary | Top Dollar, Same-Day Free Towing",
+  title: "Cash for Cars Calgary | Licensed Buyer, Same-Day Pay",
   description:
-    "Get instant cash for cars in Calgary — running or not. Free same-day towing across every quadrant, no hidden fees, paid on the spot.",
+    "Cash for cars Calgary backed by 20 years and 1000+ 5-star reviews. Free towing, same-day pickup, paid on the spot with a bill of sale. (403) 837-1550.",
   path: "/",
 });
 
@@ -477,19 +477,33 @@ export default function HomePage() {
               <p className="section-body-copy">
                 If you are within reach of the ring road, we will usually come to you.
               </p>
+              <div className="region-chip-wrap">
+                {regionalAreas.map((area) => (
+                  regionalAreaLinks[area.replace(/\s+/g, "")] ? (
+                    <a key={area} className="region-chip" href={regionalAreaLinks[area.replace(/\s+/g, "")]}>
+                      {area}
+                    </a>
+                  ) : (
+                    <span key={area} className="region-chip">
+                      {area}
+                    </span>
+                  )
+                ))}
+              </div>
             </div>
-            <div className="region-chip-wrap">
-              {regionalAreas.map((area) => (
-                regionalAreaLinks[area.replace(/\s+/g, "")] ? (
-                  <a key={area} className="region-chip" href={regionalAreaLinks[area.replace(/\s+/g, "")]}>
-                    {area}
-                  </a>
-                ) : (
-                  <span key={area} className="region-chip">
-                    {area}
-                  </span>
-                )
-              ))}
+            <div className="contact-map-card">
+              <div className="map-embed-frame">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d289495.2300691713!2d-113.8431828682807!3d51.02552233986828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c19b4c571d60bb5%3A0x1c84f45d58829fc5!2sJunk%20My%20Car%20YYC!5e0!3m2!1sen!2s!4v1787609605181!5m2!1sen!2s"
+                  width="600"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  title="Junk My Car YYC Google Map"
+                />
+              </div>
             </div>
           </div>
         </section>

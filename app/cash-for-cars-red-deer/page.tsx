@@ -106,8 +106,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cash For Cars Red Deer | Free Towing, Paid On The Spot",
-  description: "Cash for cars in Red Deer — running or not, any condition. Pickup across every neighbourhood and central Alberta, paid at pickup. Call (403) 837-1550 for a free quote.",
+  title: "Cash for Cars Red Deer | Any Make, Any Condition",
+  description: "Cash for cars Red Deer, running or seized. Blown engines, rusted frames and stripped shells all get a real number. Call (403) 837-1550.",
   path: "/cash-for-cars-red-deer",
 });
 

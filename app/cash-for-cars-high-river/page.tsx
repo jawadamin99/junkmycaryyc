@@ -60,8 +60,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Junk Car Removal High River | Cash For Cars, Any State",
-  description: "Junk car removal in High River — cash paid on the spot for any vehicle, including flood and water-damaged cars. Free towing. Call (403) 837-1550 for a free quote.",
+  title: "Cash for Cars High River | Water & Hail Write-Offs",
+  description: "Cash for cars High River — flood-soaked interiors, hail write-offs and insurance salvage bought as-is. Paid at pickup. (403) 837-1550.",
   path: "/cash-for-cars-high-river",
 });
 

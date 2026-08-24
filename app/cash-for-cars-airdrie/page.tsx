@@ -190,9 +190,9 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cash For Cars Airdrie | Same-Day Pickup & Free Towing",
+  title: "Cash for Cars Airdrie | Firm Offer, Paid at Pickup",
   description:
-    "Sell your car for cash in Airdrie — running or not. Free same-day towing to every community, no hidden fees, paid on the spot. Call (403) 837-1550 for a fast quote.",
+    "Cash for cars Airdrie — QEII commuters, high-mileage sedans and trade-in rejects bought as-is. Firm quote, cash at pickup. (403) 837-1550.",
   path: "/cash-for-cars-airdrie",
 });
 

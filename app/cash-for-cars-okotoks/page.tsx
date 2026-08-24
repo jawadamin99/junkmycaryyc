@@ -55,8 +55,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Junk Car Removal Okotoks | Cash For Cars, Free Towing",
-  description: "Junk car removal in Okotoks with cash paid on the spot. Any condition, running or not, free towing to every community. Call (403) 837-1550 for a free quote today.",
+  title: "Cash for Cars Okotoks | Driveway Cleared Same Day",
+  description: "Cash for cars Okotoks — stop insuring a car you never drive. One call, one flatbed, cash before it loads. Dial (403) 837-1550 today.",
   path: "/cash-for-cars-okotoks",
 });
 

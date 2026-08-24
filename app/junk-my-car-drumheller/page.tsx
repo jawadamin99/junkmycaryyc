@@ -49,8 +49,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Scrap Car Removal Drumheller | Cash For Cars, Any Hamlet",
-  description: "Scrap car removal in Drumheller and the valley hamlets — cash at pickup, running or not. Rosedale to East Coulee. Call (403) 837-1550 for a free quote today.",
+  title: "Cash for cars drumheller | Valley Access, Cash Paid",
+  description: "Cash for cars drumheller— coulee driveways and awkward valley access are no problem with flatbed and winch. Paid before loading. (403) 837-1550.",
   path: "/junk-my-car-drumheller",
 });
 

@@ -51,8 +51,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Scrap Car Removal Didsbury | Cash For Cars, Free Towing",
-  description: "Scrap car removal in Didsbury and Mountain View County — cash at pickup for any vehicle. Farm clearouts welcome. Call (403) 837-1550 for a free quote today.",
+  title: "Cash for Cars Didsbury That Won't Start Again",
+  description: "Cash for cars Didsbury — vehicles that sat through -30°C and never restarted still have value. We take them as they sit. (403) 837-1550.",
   path: "/junk-my-car-didsbury",
 });
 

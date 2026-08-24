@@ -52,8 +52,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Scrap Car Removal Diamond Valley | Cash For Cars, Towed",
-  description: "Scrap car removal in Diamond Valley — formerly Black Diamond and Turner Valley. Cash at pickup, free towing, any condition. Call (403) 837-1550 for a free quote.",
+  title: "Cash for cars Diamond Valley | Black Diamond & TV",
+  description: "Cash for cars Diamond Valley , covering Black Diamond and Turner Valley. Foothills acreages included, cash on the spot. (403) 837-1550.",
   path: "/junk-my-car-diamond-valley",
 });
 

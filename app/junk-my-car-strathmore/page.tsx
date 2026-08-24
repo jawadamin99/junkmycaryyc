@@ -46,8 +46,8 @@ const faqItems = [
 ];
 
 export const metadata: Metadata = buildMetadata({
-  title: "Junk Car Removal Strathmore | Cash For Cars & Trucks",
-  description: "Junk car removal in Strathmore and Wheatland County — cash paid at pickup for any vehicle, farm trucks included. Free towing. Call (403) 837-1550 for a free quote.",
+  title: "Cash for cars Strathmore | Trans-Canada Corridor",
+  description: "Cash for cars Strathmore — we run the Trans-Canada daily, so pickup is quick. Farm trucks, vans and dead sedans wanted. (403) 837-1550.",
   path: "/junk-my-car-strathmore",
 });
 
