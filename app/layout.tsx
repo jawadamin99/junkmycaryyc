@@ -85,10 +85,7 @@ export const metadata: Metadata = {
     ],
     shortcut: ["/favicon.png"],
   },
-  title: {
-    default: siteConfig.name,
-    template: `%s,
-  },
+  title: siteConfig.name,
   description:
     "Cash for cars Calgary with quick vehicle quotes, fast pickup scheduling, and a clean, modern contact experience.",
   openGraph: {
