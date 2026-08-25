@@ -87,7 +87,7 @@ export const metadata: Metadata = {
   },
   title: {
     default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
+    template: `%s,
   },
   description:
     "Cash for cars Calgary with quick vehicle quotes, fast pickup scheduling, and a clean, modern contact experience.",
