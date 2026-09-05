@@ -4,7 +4,7 @@ import Link from "next/link";
 import JsonLd from "../components/json-ld";
 import SiteFooter from "../components/site-footer";
 import SiteHeader from "../components/site-header";
-import { getAllBlogPosts } from "../lib/blog";
+import { formatBlogDate, getAllBlogPosts } from "../lib/blog";
 import { siteConfig } from "../lib/site";
 
 export const metadata: Metadata = {
@@ -86,6 +86,9 @@ export default function BlogIndexPage() {
                     </div>
                   ) : null}
                   <p className="blog-card-meta">{post.primaryKeyword ?? "Alberta vehicle guide"}</p>
+                  {formatBlogDate(post.publishedDate) ? (
+                    <p className="blog-card-date">{formatBlogDate(post.publishedDate)}</p>
+                  ) : null}
                   <h2>
                     <Link href={`/blog/${post.slug}`} className="content-link">
                       {post.title}

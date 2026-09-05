@@ -12,6 +12,7 @@ export type BlogPost = {
   primaryKeyword?: string;
   coverImage?: string;
   coverImageAlt?: string;
+  publishedDate?: string;
   content: string;
 };
 
@@ -65,6 +66,7 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
     primaryKeyword: data.primaryKeyword,
     coverImage: data.coverImage,
     coverImageAlt: data.coverImageAlt,
+    publishedDate: data.publishedDate,
     content: content.trim(),
   };
 }
@@ -83,7 +85,19 @@ export function getAllBlogSlugs(): string[] {
 export function getAllBlogPosts(): BlogPost[] {
   return getAllBlogSlugs()
     .map((slug) => getBlogPostBySlug(slug))
-    .filter((post): post is BlogPost => post !== null);
+    .filter((post): post is BlogPost => post !== null)
+    .sort((a, b) => (b.publishedDate ?? "").localeCompare(a.publishedDate ?? ""));
+}
+
+export function formatBlogDate(date?: string): string | null {
+  if (!date) return null;
+
+  return new Intl.DateTimeFormat("en-CA", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${date}T00:00:00Z`));
 }
 
 function renderInline(text: string): React.ReactNode[] {
@@ -212,6 +226,41 @@ export function renderMdxContent(content: string): React.ReactNode[] {
       continue;
     }
 
+    if (
+      line.startsWith("|") &&
+      index + 1 < lines.length &&
+      /^\|?(?:\s*:?-+:?\s*\|)+\s*$/.test(lines[index + 1].trim())
+    ) {
+      const parseRow = (row: string) =>
+        row.replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim());
+      const headers = parseRow(line);
+      const rows: string[][] = [];
+      index += 2;
+
+      while (index < lines.length && lines[index].trim().startsWith("|")) {
+        rows.push(parseRow(lines[index].trim()));
+        index += 1;
+      }
+
+      nodes.push(
+        <div className="blog-table-wrap" key={`table-${nodes.length}`}>
+          <table>
+            <thead>
+              <tr>{headers.map((header) => <th key={header}>{renderInline(header)}</th>)}</tr>
+            </thead>
+            <tbody>
+              {rows.map((row, rowIndex) => (
+                <tr key={`row-${rowIndex}`}>
+                  {row.map((cell, cellIndex) => <td key={`cell-${cellIndex}`}>{renderInline(cell)}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>,
+      );
+      continue;
+    }
+
     const paragraphLines: string[] = [];
 
     while (index < lines.length) {
@@ -224,7 +273,8 @@ export function renderMdxContent(content: string): React.ReactNode[] {
         current.startsWith("### ") ||
         current.startsWith("> ") ||
         /^\d+\.\s/.test(current) ||
-        /^[-*]\s/.test(current)
+        /^[-*]\s/.test(current) ||
+        current.startsWith("|")
       ) {
         break;
       }

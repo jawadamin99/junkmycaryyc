@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import JsonLd from "../../components/json-ld";
 import SiteFooter from "../../components/site-footer";
 import SiteHeader from "../../components/site-header";
-import { getAllBlogSlugs, getBlogPostBySlug, renderMdxContent } from "../../lib/blog";
+import { formatBlogDate, getAllBlogSlugs, getBlogPostBySlug, renderMdxContent } from "../../lib/blog";
 import { siteConfig } from "../../lib/site";
 
 type PageProps = {
@@ -74,6 +74,8 @@ export default async function BlogPostPage({ params }: PageProps) {
       },
     },
     keywords: post.primaryKeyword,
+    datePublished: post.publishedDate,
+    dateModified: post.publishedDate,
   };
 
   return (
@@ -87,6 +89,9 @@ export default async function BlogPostPage({ params }: PageProps) {
               <p className="blog-kicker">Alberta Car Selling Guide</p>
               <h1>{post.title}</h1>
               <p className="blog-dek">{post.description}</p>
+              {formatBlogDate(post.publishedDate) ? (
+                <p className="blog-published">Published {formatBlogDate(post.publishedDate)}</p>
+              ) : null}
             </div>
           </div>
         </section>
