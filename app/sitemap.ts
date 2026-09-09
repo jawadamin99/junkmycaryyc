@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllBlogPosts } from "./lib/blog";
 import { siteConfig } from "./lib/site";
 import { cityPages } from "./lib/city-pages";
+import { sitemapImages } from "./lib/sitemap-images";
 
 const pages = [
   "/",
@@ -30,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return {
       url: `${siteConfig.url}${path === "/" ? "/" : path}`,
+      images: sitemapImages[path] ?? [],
       lastModified: modifiedDate ? new Date(`${modifiedDate}T00:00:00Z`) : now,
       changeFrequency: path === "/" ? "weekly" : "monthly",
       priority:
