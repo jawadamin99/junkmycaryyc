@@ -34,6 +34,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: post.metaDescription,
       url: `${siteConfig.url}/blog/${slug}`,
       type: "article",
+      publishedTime: post.datePublished || undefined,
+      modifiedTime: post.dateModified || undefined,
       images: [
         {
           url: `${siteConfig.url}${post.coverImage ?? "/brand/junkmycaryyc-new-logo.png"}`,
@@ -74,8 +76,8 @@ export default async function BlogPostPage({ params }: PageProps) {
       },
     },
     keywords: post.primaryKeyword,
-    datePublished: post.publishedDate,
-    dateModified: post.publishedDate,
+    datePublished: post.datePublished || undefined,
+    dateModified: post.dateModified || undefined,
   };
 
   return (
@@ -89,8 +91,13 @@ export default async function BlogPostPage({ params }: PageProps) {
               <p className="blog-kicker">Alberta Car Selling Guide</p>
               <h1>{post.title}</h1>
               <p className="blog-dek">{post.description}</p>
-              {formatBlogDate(post.publishedDate) ? (
-                <p className="blog-published">Published {formatBlogDate(post.publishedDate)}</p>
+              {formatBlogDate(post.datePublished) ? (
+                <p className="blog-published">
+                  Published <time dateTime={post.datePublished}>{formatBlogDate(post.datePublished)}</time>
+                  {post.dateModified !== post.datePublished ? (
+                    <> · Updated <time dateTime={post.dateModified}>{formatBlogDate(post.dateModified)}</time></>
+                  ) : null}
+                </p>
               ) : null}
             </div>
           </div>

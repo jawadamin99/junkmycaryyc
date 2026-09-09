@@ -24,13 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   return [...pages, ...cityPagePaths, ...blogPagePaths].map((path) => {
-    const publishedDate = blogPosts.find(
+    const modifiedDate = blogPosts.find(
       (post) => `/blog/${post.slug}` === path,
-    )?.publishedDate;
+    )?.dateModified;
 
     return {
       url: `${siteConfig.url}${path === "/" ? "/" : path}`,
-      lastModified: publishedDate ? new Date(`${publishedDate}T00:00:00Z`) : now,
+      lastModified: modifiedDate ? new Date(`${modifiedDate}T00:00:00Z`) : now,
       changeFrequency: path === "/" ? "weekly" : "monthly",
       priority:
         path === "/"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { Manrope, Rajdhani, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import BreadcrumbJsonLd from "./components/breadcrumb-json-ld";
 import JsonLd from "./components/json-ld";
 import { siteConfig } from "./lib/site";
 import "./globals.css";
@@ -32,6 +33,7 @@ const businessSchema = {
       "@type": "Organization",
       "@id": `${siteConfig.url}/#organization`,
       name: siteConfig.name,
+      alternateName: "Junk My Car Calgary",
       url: siteConfig.url,
       logo: {
         "@type": "ImageObject",
@@ -42,6 +44,7 @@ const businessSchema = {
       "@type": ["LocalBusiness", "AutoDealer"],
       "@id": `${siteConfig.url}/#business`,
       name: siteConfig.name,
+      alternateName: "Junk My Car Calgary",
       url: siteConfig.url,
       image: siteConfig.socialImage,
       logo: `${siteConfig.url}/brand/junkmycaryyc-new-logo.png`,
@@ -63,7 +66,7 @@ const businessSchema = {
       "@type": "WebSite",
       "@id": `${siteConfig.url}/#website`,
       name: siteConfig.name,
-      alternateName: siteConfig.name,
+      alternateName: "Junk My Car Calgary",
       url: siteConfig.url,
       inLanguage: "en-CA",
       publisher: {
@@ -148,6 +151,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${manrope.variable} ${rajdhani.variable} ${geistMono.variable}`}>
+        <BreadcrumbJsonLd />
         {children}
         <Analytics />
       </body>

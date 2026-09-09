@@ -86,8 +86,10 @@ export default function BlogIndexPage() {
                     </div>
                   ) : null}
                   <p className="blog-card-meta">{post.primaryKeyword ?? "Alberta vehicle guide"}</p>
-                  {formatBlogDate(post.publishedDate) ? (
-                    <p className="blog-card-date">{formatBlogDate(post.publishedDate)}</p>
+                  {formatBlogDate(post.datePublished) ? (
+                    <p className="blog-card-date">
+                      <time dateTime={post.datePublished}>{formatBlogDate(post.datePublished)}</time>
+                    </p>
                   ) : null}
                   <h2>
                     <Link href={`/blog/${post.slug}`} className="content-link">

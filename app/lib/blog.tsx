@@ -12,7 +12,8 @@ export type BlogPost = {
   primaryKeyword?: string;
   coverImage?: string;
   coverImageAlt?: string;
-  publishedDate?: string;
+  datePublished: string;
+  dateModified: string;
   content: string;
 };
 
@@ -66,7 +67,8 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
     primaryKeyword: data.primaryKeyword,
     coverImage: data.coverImage,
     coverImageAlt: data.coverImageAlt,
-    publishedDate: data.publishedDate,
+    datePublished: data.datePublished ?? data.publishedDate ?? "",
+    dateModified: data.dateModified ?? data.datePublished ?? data.publishedDate ?? "",
     content: content.trim(),
   };
 }
@@ -86,7 +88,7 @@ export function getAllBlogPosts(): BlogPost[] {
   return getAllBlogSlugs()
     .map((slug) => getBlogPostBySlug(slug))
     .filter((post): post is BlogPost => post !== null)
-    .sort((a, b) => (b.publishedDate ?? "").localeCompare(a.publishedDate ?? ""));
+    .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
 }
 
 export function formatBlogDate(date?: string): string | null {
